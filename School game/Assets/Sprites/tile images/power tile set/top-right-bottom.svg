@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="0.87999994cm"
+   height="0.87999994cm"
+   viewBox="0 0 33.259841 33.259841"
+   id="SVGRoot"
+   version="1.1"
+   enable-background="new"
+   sodipodi:docname="top-right-bottom.svg"
+   inkscape:export-filename="..\power tile set\top-bottom.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="cm" />
+  <defs
+     id="defs4787" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1.66299;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     d="M 0,33.259843 33.259843,0"
+     id="path3"
+     inkscape:label="hold open" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.65197;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     d="M 16.629922,33.259843 V 0"
+     id="path4" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:6.65197;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+     d="M 16.629922,16.629922 H 33.259843"
+     id="path5" />
+</svg>

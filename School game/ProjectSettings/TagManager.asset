@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - player
+  - Water
+  - UI
+  - floor
+  - killer
+  - plate
+  - dead player
+  - dont effect player
+  - rift
+  - button
+  - wall
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - off screen killer
+  m_SortingLayers:
+  - name: bellow
+    uniqueID: 2783970559
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 866418863
+    locked: 0
+  - name: overlay
+    uniqueID: 1242007411
+    locked: 0
+  - name: Partical
+    uniqueID: 2464269565
+    locked: 0

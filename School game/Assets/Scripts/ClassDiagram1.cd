@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Activator">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonActivator">
+    <Position X="1.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\ButtonActivator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic">
+    <Position X="3.5" Y="5.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Logic.Opperator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Activator\Logic.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAkAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PressurePlateActivator">
+    <Position X="5.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\PressurePlateActivator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour">
+    <Position X="10.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="HideSprite">
+    <Position X="13.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\HideSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LevelComplete">
+    <Position X="11.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAAiAAECAAAAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\LevelComplete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PowerWall">
+    <Position X="7.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
+      <FileName>Assets\Scripts\PowerWall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RotateRift">
+    <Position X="16" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\RotateRift.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Feild.FeildMaker">
+    <Position X="9.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
+      <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
