@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Networking;
 using UnityEngine;
-using System.Threading;
 namespace Player {
     public class ParentDeadPlayerToMovable : ParentPlayerToMovable
     {
