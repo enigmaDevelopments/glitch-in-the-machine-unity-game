@@ -16,18 +16,17 @@ public class Logic : Activator
         xnor
     };
     public Opperator opperator = new Opperator();
-    public static implicit operator bool(Logic logic)
+    private void Update()
     {
-        if (logic.opperator == Opperator.and)
-            return logic.A && logic.B;
-        else if (logic.opperator == Opperator.or)
-            return logic.A || logic.B;
-        else if (logic.opperator == Opperator.xor)
-            return logic.A ^ logic. B;
-        else if (logic.opperator == Opperator.not)
-            return !logic.A;
-        else if (logic.opperator == Opperator.xnor)
-            return (bool)logic.A == (bool)logic.B;
-        return logic.A;
+        if (opperator == Opperator.and)
+            _on = A && B;
+        else if (opperator == Opperator.or)
+            _on = A || B;
+        else if (opperator == Opperator.xor)
+            _on = A ^ B;
+        else if (opperator == Opperator.not)
+            _on = !A;
+        else if (opperator == Opperator.xnor)
+            _on = (bool)A == (bool)B;
     }
 }
