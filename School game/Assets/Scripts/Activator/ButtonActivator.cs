@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using Style;
 public class ButtonActivator : Activator
 {
     public Sprite off;
     public Sprite offDepressed;
     public Sprite on;
     public Sprite onDepressed;
-    private SpriteRenderer render;
+    private SpriteChanger render;
     public bool singlePress = false;
     private bool depressed = false;
     public float timer = 5f;
     private float time = 0;
     private void Start()
     {
-        render = gameObject.GetComponent<SpriteRenderer>();
+        Sprite[] sprites = new Sprite[]{off,offDepressed,on,onDepressed};
+        render = new SpriteChanger(sprites,gameObject);
     }
     private void Update()
     {
@@ -26,9 +28,9 @@ public class ButtonActivator : Activator
         {
             depressed = !depressed;
             if (!singlePress && _on)
-                render.sprite = on;
+                render.changeSprite(2);
             else
-                render.sprite = off;
+                render.changeSprite(0);
             if (singlePress)
                 _on = false;
         }
@@ -44,20 +46,16 @@ public class ButtonActivator : Activator
             {
                 _on = true;
                 time = timer;
-                render.sprite = offDepressed;
+                render.changeSprite(1);
             }
             else
             {
                 time = timer;
                 _on = !_on;
                 if (_on)
-                {
-                    render.sprite = offDepressed;
-                }
+                    render.changeSprite(1);
                 else
-                {
-                    render.sprite = onDepressed;
-                }
+                    render.changeSprite(3);
             }
         }
     }

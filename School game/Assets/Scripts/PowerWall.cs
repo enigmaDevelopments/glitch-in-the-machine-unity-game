@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Style;
 
 public class PowerWall : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class PowerWall : MonoBehaviour
     {
         if (Mathf.Round(gameObject.transform.localRotation.eulerAngles.z) % 90 != 0)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = angled;
+            SpriteChanger.changeSprite(angled, gameObject);
             mainColider.enabled = false;
             angledColider.enabled = true;
         }
