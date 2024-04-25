@@ -12,19 +12,5 @@ namespace Player {
         {
             return PlayerMovment.checkAreaAll(groundCheck, groundCheck2,movables,gameObject);
         }
-        public void end()
-        {
-            removeChildern("Player dead(Clone)");
-            removeChildern("Player(Clone)");
-            Destroy(gameObject);
-        }
-        private void removeChildern(string name) {
-            Transform child = transform.Find(name);
-            while (child != null)
-            {
-                child.GetComponent<ParentPlayerToMovable>().unparent();
-                child = transform.Find(name);
-            }
-        }
     }
 }
