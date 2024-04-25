@@ -285,7 +285,7 @@ MonoBehaviour:
   buttonCheck2: {fileID: 6827354720792781169}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 9024
+    m_Bits: 9032
   buttonLayer:
     serializedVersion: 2
     m_Bits: 4096

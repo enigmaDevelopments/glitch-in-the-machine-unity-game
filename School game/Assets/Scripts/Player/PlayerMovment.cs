@@ -105,10 +105,14 @@ namespace Player
             if (_facingRight && horizantal < 0f || !_facingRight && horizantal > 0f)
             {
                 _facingRight = !_facingRight;
-                Vector3 localScale = transform.localScale;
-                localScale.x *= -1f;
-                transform.localScale = localScale;
+                Flip(transform);
             }
+        }
+        public static void Flip(Transform transform)
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x *= -1f;
+            transform.localScale = localScale;
         }
     }
 }

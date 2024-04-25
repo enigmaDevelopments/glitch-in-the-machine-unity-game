@@ -85,7 +85,7 @@ namespace Player
                 }
                 dead.gameObject.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
             }
-            Destroy(gameObject);
+            gameObject.GetComponent<ParentPlayerToMovable>().end();
         }
     }
 }

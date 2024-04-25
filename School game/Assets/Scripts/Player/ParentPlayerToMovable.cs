@@ -10,6 +10,7 @@ namespace Player
         public LayerMask movables;
         protected GameObject parent;
         private PlayerMovment movment;
+        private bool wasRight;
         private void Start()
         {
             movment = GetComponent<PlayerMovment>();
@@ -17,9 +18,19 @@ namespace Player
         protected void Update()
         {
             if (parent == null)
+            {
                 parentToBellow();
+                if (parent != null && parent.layer == 3)
+                    wasRight = parent.GetComponent<PlayerMovment>().FacingRight;
+            }
             else if (!getBellow().Contains(parent))
-                    unparent();
+                unparent();
+            else if (parent.layer == 3 && wasRight != parent.GetComponent<PlayerMovment>().FacingRight)
+            {
+                wasRight = !wasRight;
+                PlayerMovment.Flip(transform);
+            }
+
         }
         private void parentToBellow()
         {
@@ -41,6 +52,21 @@ namespace Player
         public virtual GameObject[] getBellow()
         {
            return movment.checkGroundAll(movables);
+        }
+        public void end()
+        {
+            removeChildern("Player dead(Clone)");
+            removeChildern("Player(Clone)");
+            Destroy(gameObject);
+        }
+        private void removeChildern(string name)
+        {
+            Transform child = transform.Find(name);
+            while (child != null)
+            {
+                child.GetComponent<ParentPlayerToMovable>().unparent();
+                child = transform.Find(name);
+            }
         }
     }
 }
