@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System;
 
 namespace Player
 {
@@ -11,6 +12,15 @@ namespace Player
         protected GameObject parent;
         private PlayerMovment movment;
         private bool wasRight;
+        public int ParentScaleDir
+        {
+            get
+            {
+                if (parent == null || parent.transform.lossyScale.x == 0)
+                    return 1;
+                return Math.Sign(parent.transform.lossyScale.x);
+            }
+        }
         private void Start()
         {
             movment = GetComponent<PlayerMovment>();
@@ -20,17 +30,9 @@ namespace Player
             if (parent == null)
             {
                 parentToBellow();
-                if (parent != null && parent.layer == 3)
-                    wasRight = parent.GetComponent<PlayerMovment>().FacingRight;
             }
             else if (!getBellow().Contains(parent))
                 unparent();
-            else if (parent.layer == 3 && wasRight != parent.GetComponent<PlayerMovment>().FacingRight)
-            {
-                wasRight = !wasRight;
-                PlayerMovment.Flip(transform);
-            }
-
         }
         private void parentToBellow()
         {

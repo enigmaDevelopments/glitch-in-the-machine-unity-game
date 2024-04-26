@@ -10,6 +10,8 @@ using UnityEngine.VFX;
 namespace Player
 {
     using Spawner;
+    using UnityEditor.Tilemaps;
+
     public class PlayerKiller : MonoBehaviour
     {
         public GameObject deadPlayer;
@@ -77,12 +79,7 @@ namespace Player
             if (leaveBody)
             {
                 GameObject dead = Instantiate(deadPlayer, transform.position, transform.rotation);
-                if (!movmentScrpit.FacingRight)
-                {
-                    Vector3 localScale = dead.transform.localScale;
-                    localScale.x *= -1f;
-                    dead.transform.localScale = localScale;
-                }
+                PlayerMovment.Flip(dead);
                 dead.gameObject.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
             }
             gameObject.GetComponent<ParentPlayerToMovable>().end();

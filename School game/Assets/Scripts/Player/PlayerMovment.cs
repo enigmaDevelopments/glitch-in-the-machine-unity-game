@@ -20,11 +20,11 @@ namespace Player
         public float speed = 8f;
         public float jump = 16f;
         public float coyoteTime = .1f;
-        private bool _facingRight = true;
+        private static bool _facingRight = true;
         private bool notJumped = false;
         private float timeFromGround = 100f;
 
-        public bool FacingRight
+        public static bool FacingRight
         {
             get
             {
@@ -34,6 +34,7 @@ namespace Player
         void Update()
         {
             horizantal = Input.GetAxisRaw("Horizontal") * speed;
+            _facingRight = horizantal == 0f ? _facingRight : horizantal > 0f;
             #region kyote timer
             if (trueGrounded())
             {
@@ -66,7 +67,7 @@ namespace Player
                     button.gameObject.GetComponent<ButtonActivator>().press();
             }
             #endregion
-            Flip();
+            Flip(gameObject);
         }
 
         void FixedUpdate()
@@ -100,19 +101,13 @@ namespace Player
             return (from col in Physics2D.OverlapAreaAll(check.position, check2.position, layers) where col.gameObject != self select col.gameObject).ToArray();
         }
         #endregion
-        private void Flip()
+        public static void Flip(GameObject gameObject)
         {
-            if (_facingRight && horizantal < 0f || !_facingRight && horizantal > 0f)
-            {
-                _facingRight = !_facingRight;
-                Flip(transform);
-            }
-        }
-        public static void Flip(Transform transform)
-        {
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
+            Vector3 localScale = gameObject.transform.localScale;
+            Vector3 lossyScale = gameObject.transform.lossyScale;
+            int parentScale = gameObject.GetComponent<ParentPlayerToMovable>().ParentScaleDir;
+            localScale.x = Mathf.Abs(localScale.x) * (_facingRight? 1f:-1f) * parentScale;
+            gameObject.transform.localScale = localScale;
         }
     }
 }
