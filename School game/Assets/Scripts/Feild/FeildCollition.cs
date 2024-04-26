@@ -10,7 +10,7 @@ namespace Feild
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.gameObject.layer == 9)
-                collision.gameObject.GetComponent<ParentDeadPlayerToMovable>().end(); ;
+                collision.gameObject.GetComponent<ParentPlayerToMovable>().end(); ;
         }
     }
 }

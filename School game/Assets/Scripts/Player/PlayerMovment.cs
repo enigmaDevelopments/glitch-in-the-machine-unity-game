@@ -1,3 +1,4 @@
+using player;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,6 +24,7 @@ namespace Player
         private static bool _facingRight = true;
         private bool notJumped = false;
         private float timeFromGround = 100f;
+        private Checker check;
 
         public static bool FacingRight
         {
@@ -31,12 +33,16 @@ namespace Player
                 return _facingRight;
             }
         }
+        private void Start()
+        {
+            check = gameObject.GetComponent<Checker>();
+        }
         void Update()
         {
             horizantal = Input.GetAxisRaw("Horizontal") * speed;
             _facingRight = horizantal == 0f ? _facingRight : horizantal > 0f;
             #region kyote timer
-            if (trueGrounded())
+            if (check.checkArea())
             {
                 notJumped = true;
                 timeFromGround = 0;
@@ -62,9 +68,8 @@ namespace Player
             #region buttonPressed
             if (Input.GetButtonDown("use"))
             {
-                Collider2D button = Physics2D.OverlapArea(buttonCheck.position, buttonCheck2.position, buttonLayer);
-                if (button != null)
-                    button.gameObject.GetComponent<ButtonActivator>().press();
+                foreach (GameObject button in check.checkAreaAll(2, 1)) 
+                    button.GetComponent<ButtonActivator>().press();
             }
             #endregion
             Flip(gameObject);
@@ -79,22 +84,6 @@ namespace Player
         public bool Grounded()
         {
             return notJumped && timeFromGround <= coyoteTime;
-        }
-        public bool trueGrounded()
-        {
-            return checkGround(groundLayer);
-        }
-        public bool checkGround(LayerMask layers)
-        {
-            return checkArea(groundCheck, groundCheck2, layers, gameObject);
-        }
-        public GameObject[] checkGroundAll(LayerMask layers)
-        {
-            return checkAreaAll(groundCheck, groundCheck2, layers, gameObject);
-        }
-        public static bool checkArea(Transform check, Transform check2, LayerMask layers,GameObject self)
-        {
-            return checkAreaAll(check,check2,layers,self).Count() != 0;
         }
         public static GameObject[] checkAreaAll(Transform check, Transform check2, LayerMask layers,GameObject self)
         {

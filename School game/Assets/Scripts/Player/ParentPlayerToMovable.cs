@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using System;
+using player;
 
 namespace Player
 {
     public class ParentPlayerToMovable : MonoBehaviour
     {
-        public LayerMask movables;
-        protected GameObject parent;
-        private PlayerMovment movment;
-        private bool wasRight;
+        private GameObject parent;
+        private Checker check;
         public int ParentScaleDir
         {
             get
@@ -23,9 +22,9 @@ namespace Player
         }
         private void Start()
         {
-            movment = GetComponent<PlayerMovment>();
+            check = GetComponent<Checker>();
         }
-        protected void Update()
+        private void Update()
         {
             if (parent == null)
             {
@@ -46,14 +45,14 @@ namespace Player
                 parent = bellow[0];
             }
         }
-        public void unparent()
+        private void unparent()
         {
             transform.parent = null;
             parent = null;
         }
-        public virtual GameObject[] getBellow()
+        private GameObject[] getBellow()
         {
-           return movment.checkGroundAll(movables);
+           return check.checkAreaAll(3);
         }
         public void end()
         {

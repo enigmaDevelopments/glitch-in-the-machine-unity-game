@@ -48,6 +48,6 @@ public class LevelComplete : MonoBehaviour
             gameObject.GetComponent<RotateRift>().speed *= 100;
         }
         else if (collision.gameObject.layer == 9)
-            collision.gameObject.GetComponent<ParentDeadPlayerToMovable>().end();
+            collision.gameObject.GetComponent<ParentPlayerToMovable>().end();
     }
 }

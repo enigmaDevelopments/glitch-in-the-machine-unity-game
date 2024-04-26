@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 5347267516925293523}
   - component: {fileID: 5347267516925293522}
   - component: {fileID: 1298007398722846059}
+  - component: {fileID: 4515507932528657521}
   m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
@@ -305,11 +306,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deadPlayer: {fileID: 2647212527427717791, guid: ec69d0de1b5d7fa4c877516ae8217414, type: 3}
-  headCheck: {fileID: 8814302617072917463}
-  headCheck2: {fileID: 2653011963138355452}
-  deathLayer:
-    serializedVersion: 2
-    m_Bits: 128
   killerKyoteTime: 2
 --- !u!114 &1298007398722846059
 MonoBehaviour:
@@ -323,9 +319,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae755ddf4875beb4e9b59ba57a3de654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movables:
+--- !u!114 &4515507932528657521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347267516925293524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2f7f5c73fa280c499c53685514c067d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 9032
+  deathLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 4096
+  movablesLayer:
     serializedVersion: 2
     m_Bits: 8712
+  groundCheck: {fileID: 5347267517466412581}
+  groundCheck2: {fileID: 5347267517834623220}
+  buttonCheck: {fileID: 658081629715434722}
+  buttonCheck2: {fileID: 6827354720792781169}
+  headCheck: {fileID: 8814302617072917463}
+  headCheck2: {fileID: 2653011963138355452}
 --- !u!1 &5347267517466412602
 GameObject:
   m_ObjectHideFlags: 0
