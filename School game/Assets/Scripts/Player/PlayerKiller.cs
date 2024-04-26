@@ -11,7 +11,6 @@ namespace Player
 {
     using player;
     using Spawner;
-    using UnityEditor.Tilemaps;
 
     public class PlayerKiller : MonoBehaviour
     {
