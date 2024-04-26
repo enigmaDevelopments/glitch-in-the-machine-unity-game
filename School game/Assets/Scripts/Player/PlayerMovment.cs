@@ -11,12 +11,6 @@ namespace Player
     public class PlayerMovment : MonoBehaviour
     {
         public Rigidbody2D rb;
-        public Transform groundCheck;
-        public Transform groundCheck2;
-        public Transform buttonCheck;
-        public Transform buttonCheck2;
-        public LayerMask groundLayer;
-        public LayerMask buttonLayer;
         private float horizantal;
         public float speed = 8f;
         public float jump = 16f;

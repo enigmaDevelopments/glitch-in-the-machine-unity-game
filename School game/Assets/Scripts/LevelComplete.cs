@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using Player;
 using Style;
+using Spawner;
 
 public class LevelComplete : MonoBehaviour
 {
@@ -40,11 +41,12 @@ public class LevelComplete : MonoBehaviour
         {
             player = collision.gameObject;
             player.transform.SetParent(gameObject.transform);
-            collision.GetComponent<BoxCollider2D>().enabled = false;
-            Destroy(player.GetComponent<Rigidbody2D>());
-            Destroy(player.GetComponent<PlayerMovment>());
-            Destroy(player.GetComponent<PlayerKiller>());
-            Destroy(player.GetComponent<ParentPlayerToMovable>());
+            foreach (GameObject playerI in GameObject.FindGameObjectsWithTag("Player"))
+                if (player != playerI)
+                    Destroy(playerI);
+            foreach (var script in player.GetComponents<Component>())
+                if (!(script.GetType() == typeof(Transform) || script.GetType() == typeof(SpriteRenderer)))
+                    Destroy(script);
             gameObject.GetComponent<RotateRift>().speed *= 100;
         }
         else if (collision.gameObject.layer == 9)
