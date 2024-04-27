@@ -52,18 +52,16 @@ namespace Player
         }
         public void end()
         {
-            removeChildern("Player dead(Clone)");
-            removeChildern("Player(Clone)");
-            Destroy(gameObject);
-        }
-        private void removeChildern(string name)
-        {
-            Transform child = transform.Find(name);
-            while (child != null)
+            foreach (string name in new String[] { "Player dead(Clone)", "Player(Clone)" })
             {
-                child.GetComponent<ParentPlayerToMovable>().unparent();
-                child = transform.Find(name);
+                Transform child = transform.Find("ParentPoint").Find(name);
+                while (child != null)
+                {
+                    child.GetComponent<ParentPlayerToMovable>().unparent();
+                    child = transform.Find(name);
+                }
             }
+            Destroy(gameObject);
         }
     }
 }
