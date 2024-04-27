@@ -19,14 +19,6 @@ namespace Player
         private bool notJumped = false;
         private float timeFromGround = 100f;
         private Checker check;
-
-        public static bool FacingRight
-        {
-            get
-            {
-                return _facingRight;
-            }
-        }
         private void Start()
         {
             check = gameObject.GetComponent<Checker>();
@@ -66,7 +58,7 @@ namespace Player
                     button.GetComponent<ButtonActivator>().press();
             }
             #endregion
-            Flip(gameObject);
+            Flip(transform);
         }
 
         void FixedUpdate()
@@ -79,18 +71,12 @@ namespace Player
         {
             return notJumped && timeFromGround <= coyoteTime;
         }
-        public static GameObject[] checkAreaAll(Transform check, Transform check2, LayerMask layers,GameObject self)
-        {
-            return (from col in Physics2D.OverlapAreaAll(check.position, check2.position, layers) where col.gameObject != self select col.gameObject).ToArray();
-        }
         #endregion
-        public static void Flip(GameObject gameObject)
+        public static void Flip(Transform transform)
         {
-            Vector3 localScale = gameObject.transform.localScale;
-            Vector3 lossyScale = gameObject.transform.lossyScale;
-            int parentScale = gameObject.GetComponent<ParentPlayerToMovable>().ParentScaleDir;
-            localScale.x = Mathf.Abs(localScale.x) * (_facingRight? 1f:-1f) * parentScale;
-            gameObject.transform.localScale = localScale;
+            Vector3 localScale = transform.localScale;
+            localScale.x = Mathf.Abs(localScale.x) * (_facingRight? 1f:-1f);
+            transform.localScale = localScale;
         }
     }
 }

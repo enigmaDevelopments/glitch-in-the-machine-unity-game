@@ -9,7 +9,7 @@ namespace Style
         public Transform wall;
         void Update()
         {
-            transform.localScale = new Vector2(1, Mathf.Pow(wall.transform.localScale.y, -1));
+            transform.localScale = new Vector2(Mathf.Pow(wall.transform.localScale.x, -1), Mathf.Pow(wall.transform.localScale.y, -1));
         }
     }
 }

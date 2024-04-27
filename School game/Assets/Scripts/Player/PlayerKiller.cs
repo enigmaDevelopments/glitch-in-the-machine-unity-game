@@ -76,7 +76,7 @@ namespace Player
             if (leaveBody)
             {
                 GameObject dead = Instantiate(deadPlayer, transform.position, transform.rotation);
-                PlayerMovment.Flip(dead);
+                PlayerMovment.Flip(dead.transform);
                 dead.gameObject.GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity;
             }
             gameObject.GetComponent<ParentPlayerToMovable>().end();

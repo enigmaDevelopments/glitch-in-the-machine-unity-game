@@ -11,15 +11,6 @@ namespace Player
     {
         private GameObject parent;
         private Checker check;
-        public int ParentScaleDir
-        {
-            get
-            {
-                if (parent == null || parent.transform.lossyScale.x == 0)
-                    return 1;
-                return Math.Sign(parent.transform.lossyScale.x);
-            }
-        }
         private void Start()
         {
             check = GetComponent<Checker>();
@@ -38,11 +29,13 @@ namespace Player
             GameObject[] bellow = getBellow();
             if (bellow.Length != 0 && parent == null)
             {
-                if (bellow[0].layer == 13)
-                    transform.SetParent(bellow[0].transform.Find("detector").transform);
-                else
-                    transform.SetParent(bellow[0].transform);
                 parent = bellow[0];
+                if (parent.layer == 13)
+                    parentToChild("detector");
+                else if (parent.layer == 3 || parent.layer == 9)
+                    parentToChild("ParentPoint");
+                else
+                    transform.SetParent(parent.transform);
             }
         }
         private void unparent()
@@ -53,6 +46,10 @@ namespace Player
         private GameObject[] getBellow()
         {
            return check.checkAreaAll(3);
+        }
+        private void parentToChild(string name)
+        {
+            transform.SetParent(parent.transform.Find(name).transform);
         }
         public void end()
         {
