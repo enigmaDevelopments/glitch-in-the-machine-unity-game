@@ -5,12 +5,10 @@ using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.VFX;
-
+using Spawner;
 
 namespace Player
 {
-    using player;
-    using Spawner;
 
     public class PlayerKiller : MonoBehaviour
     {

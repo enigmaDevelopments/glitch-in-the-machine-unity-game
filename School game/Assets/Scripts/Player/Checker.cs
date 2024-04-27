@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine;
 
-namespace player
+namespace Player
 {
     public class Checker : MonoBehaviour
     {
