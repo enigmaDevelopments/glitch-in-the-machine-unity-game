@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8999c209999e41d4daee58192e256ec7
+guid: ed416dda4a1571a44a67c687d9898f74
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -12,7 +12,7 @@ ScriptedImporter:
   texturedSpriteMeshType: 0
   svgPixelsPerUnit: 100
   gradientResolution: 64
-  alignment: 2
+  alignment: 1
   customPivot: {x: 0, y: 0}
   generatePhysicsShape: 0
   viewportOptions: 0
@@ -39,21 +39,20 @@ ScriptedImporter:
   spriteData:
     TessellationDetail: 0
     SpriteRect:
-      name: bottom inner topSprite
+      name: bottom leftSprite
       originalName: 
-      pivot: {x: 0.5, y: 0.48076934}
-      alignment: 0
+      pivot: {x: 0, y: 0.96153843}
+      alignment: 1
       border: {x: 0, y: 0, z: 0, w: 0}
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
+        width: 13
         height: 13
-      spriteID: 9ba3bdf86ae09504d91d5dceba87fe20
+      spriteID: 728272029b91a2343adbe37647cfbe2a
     PhysicsOutlines:
     - Vertices:
-      - {x: -37.489998, y: 6.5}
-      - {x: -50, y: -6.5}
-      - {x: 50, y: -6.5}
-      - {x: 37.490486, y: 6.5}
+      - {x: -6.5, y: -6.5}
+      - {x: 5.5, y: -6.5}
+      - {x: 5.5, y: 5.5}
