@@ -29,8 +29,6 @@ namespace EndLevel
         }
         protected virtual void Start()
         {
-            Debug.Log(SceneManager.sceneCountInBuildSettings);
-            Debug.Log(SceneManager.GetActiveScene().buildIndex + 1);
             NextLevel = SceneManager.GetActiveScene().buildIndex + 1;
         }
         protected void FixedUpdate()
