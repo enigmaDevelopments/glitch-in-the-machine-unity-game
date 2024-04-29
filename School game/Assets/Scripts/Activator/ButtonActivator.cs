@@ -1,6 +1,6 @@
 using UnityEngine;
 using Style;
-namespace Activator
+namespace Activate
 {
     public class ButtonActivator : Activator
     {

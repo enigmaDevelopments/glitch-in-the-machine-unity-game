@@ -1,4 +1,4 @@
-namespace Activator
+namespace Activate
 {
     public class Logic : Activator
     {

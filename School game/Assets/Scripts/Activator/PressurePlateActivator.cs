@@ -1,5 +1,5 @@
 using UnityEngine;
-namespace Activator
+namespace Activate
 {
     public class PressurePlateActivator : Activator
     {

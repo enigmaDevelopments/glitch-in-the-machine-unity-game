@@ -1,5 +1,6 @@
 using UnityEngine;
 using Style;
+using Activate;
 
 public class PowerWall : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class PowerWall : MonoBehaviour
     public LayerMask ignore;
     public float speed = .001f;
     public bool sartExtended = false;
-    public Activator.Activator power;
+    public Activator power;
     private bool extending;
     private bool moving = false;
     private bool lastState;

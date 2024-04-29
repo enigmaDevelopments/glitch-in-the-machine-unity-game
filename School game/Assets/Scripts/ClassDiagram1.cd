@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Activator.Activator">
+  <Class Name="Activate.Activator">
     <Position X="9.25" Y="23.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Activator.ButtonActivator">
+  <Class Name="Activate.ButtonActivator">
     <Position X="6.5" Y="25.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
@@ -17,7 +17,7 @@
       <Field Name="render" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="Activator.PressurePlateActivator">
+  <Class Name="Activate.PressurePlateActivator">
     <Position X="11.75" Y="25.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
@@ -34,28 +34,13 @@
       <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
       <FileName>Assets\Scripts\PowerWall.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="power" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Feild.FeildMaker">
     <Position X="19" Y="23.25" Width="2" />
-    <AssociationLine Name="power" Type="Activator.Activator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="19.75" Y="25.704" />
-        <Point X="19.75" Y="27.677" />
-        <Point X="15.258" Y="27.677" />
-        <Point X="15.258" Y="24.438" />
-        <Point X="12.25" Y="24.438" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
       <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="power" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="EndLevel.LevelComplete">
     <Position X="21.75" Y="23.25" Width="3.25" />
@@ -144,10 +129,10 @@
       <FileName>Assets\Scripts\Style\RotateRift.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Activator.Logic">
+  <Class Name="Activate.Logic">
     <Position X="9" Y="25.75" Width="2" />
     <NestedTypes>
-      <Enum Name="Activator.Logic.Opperator" Collapsed="true">
+      <Enum Name="Activate.Logic.Opperator" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Assets\Scripts\Activator\Logic.cs</NewMemberFileName>
         </TypeIdentifier>
