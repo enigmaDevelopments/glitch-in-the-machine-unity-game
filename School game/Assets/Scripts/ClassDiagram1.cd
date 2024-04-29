@@ -180,5 +180,19 @@
       <FileName>Assets\Scripts\Style\SpriteChanger.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Enum Name="Player.layerMask">
+    <Position X="27.75" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Player.checks">
+    <Position X="26" Y="25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
