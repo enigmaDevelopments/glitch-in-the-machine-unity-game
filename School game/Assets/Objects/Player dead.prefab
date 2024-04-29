@@ -313,4 +313,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f0ab6ad368663f4aad577043364b97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wall: {fileID: 1722102652851250853}
+  parent: {fileID: 1722102652851250853}
