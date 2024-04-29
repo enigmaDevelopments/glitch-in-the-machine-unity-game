@@ -1,13 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements;
-using UnityEngine.SceneManagement;
 using Player;
 using Style;
-using Spawner;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace EndLevel 
+namespace EndLevel
 {
     public class LevelComplete : MonoBehaviour
     {

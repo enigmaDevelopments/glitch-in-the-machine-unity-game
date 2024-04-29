@@ -1,61 +1,60 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
 using Style;
-public class ButtonActivator : Activator
+namespace Activator
 {
-    public Sprite off;
-    public Sprite offDepressed;
-    public Sprite on;
-    public Sprite onDepressed;
-    private SpriteChanger render;
-    public bool singlePress = false;
-    private bool depressed = false;
-    public float timer = 5f;
-    private float time = 0;
-    private void Start()
+    public class ButtonActivator : Activator
     {
-        Sprite[] sprites = new Sprite[]{off,offDepressed,on,onDepressed};
-        render = new SpriteChanger(sprites,gameObject);
-    }
-    private void Update()
-    {
-        if (time > 0)
-            time -= Time.deltaTime;        
-        else if (depressed)
+        public Sprite off;
+        public Sprite offDepressed;
+        public Sprite on;
+        public Sprite onDepressed;
+        private SpriteChanger render;
+        public bool singlePress = false;
+        private bool depressed = false;
+        public float timer = 5f;
+        private float time = 0;
+        private void Start()
         {
-            depressed = !depressed;
-            if (!singlePress && _on)
-                render.changeSprite(2);
-            else
-                render.changeSprite(0);
-            if (singlePress)
-                _on = false;
+            Sprite[] sprites = new Sprite[] { off, offDepressed, on, onDepressed };
+            render = new SpriteChanger(sprites, gameObject);
         }
-    }
-    public void press()
-    {
-        if (depressed)
-            time = timer;
-        else
+        private void Update()
         {
-            depressed = true;
-            if (singlePress)
+            if (time > 0)
+                time -= Time.deltaTime;
+            else if (depressed)
             {
-                _on = true;
-                time = timer;
-                render.changeSprite(1);
+                depressed = !depressed;
+                if (!singlePress && _on)
+                    render.changeSprite(2);
+                else
+                    render.changeSprite(0);
+                if (singlePress)
+                    _on = false;
             }
+        }
+        public void press()
+        {
+            if (depressed)
+                time = timer;
             else
             {
-                time = timer;
-                _on = !_on;
-                if (_on)
+                depressed = true;
+                if (singlePress)
+                {
+                    _on = true;
+                    time = timer;
                     render.changeSprite(1);
+                }
                 else
-                    render.changeSprite(3);
+                {
+                    time = timer;
+                    _on = !_on;
+                    if (_on)
+                        render.changeSprite(1);
+                    else
+                        render.changeSprite(3);
+                }
             }
         }
     }

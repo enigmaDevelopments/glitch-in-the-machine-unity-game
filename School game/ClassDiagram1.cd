@@ -14,13 +14,6 @@
     <Position X="31.25" Y="5.75" Width="4.75" />
     <TypeIdentifier />
   </Class>
-  <Class Name="Activator">
-    <Position X="10" Y="11.25" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="EndLevel.LevelComplete">
     <Position X="22.75" Y="11.25" Width="3.25" />
     <TypeIdentifier>
@@ -37,15 +30,6 @@
   </Class>
   <Class Name="Feild.FeildMaker">
     <Position X="20" Y="11.25" Width="2" />
-    <AssociationLine Name="power" Type="Activator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="20.938" Y="13.704" />
-        <Point X="20.938" Y="15.557" />
-        <Point X="16.363" Y="15.557" />
-        <Point X="16.363" Y="12.5" />
-        <Point X="13" Y="12.5" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
       <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
@@ -199,5 +183,26 @@
     <Position X="25" Y="7" Width="1.5" />
     <TypeIdentifier />
   </Class>
+  <Class Name="Activator" Collapsed="true">
+    <Position X="21.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Player.layerMask">
+    <Position X="29" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Player.checks">
+    <Position X="27.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAABAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

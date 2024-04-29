@@ -1,32 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.Dependencies.NCalc;
-using UnityEngine;
-
-public class Logic : Activator
+namespace Activator
 {
-    public Activator A;
-    public Activator B;
-    public enum Opperator
+    public class Logic : Activator
     {
-        and,
-        or,
-        not,
-        xor,
-        xnor
-    };
-    public Opperator opperator = new Opperator();
-    private void Update()
-    {
-        if (opperator == Opperator.and)
-            _on = A && B;
-        else if (opperator == Opperator.or)
-            _on = A || B;
-        else if (opperator == Opperator.xor)
-            _on = A ^ B;
-        else if (opperator == Opperator.not)
-            _on = !A;
-        else if (opperator == Opperator.xnor)
-            _on = (bool)A == (bool)B;
+        public Activator A;
+        public Activator B;
+        public enum Opperator
+        {
+            and,
+            or,
+            not,
+            xor,
+            xnor
+        };
+        public Opperator opperator = new Opperator();
+        private void Update()
+        {
+            if (opperator == Opperator.and)
+                _on = A && B;
+            else if (opperator == Opperator.or)
+                _on = A || B;
+            else if (opperator == Opperator.xor)
+                _on = A ^ B;
+            else if (opperator == Opperator.not)
+                _on = !A;
+            else if (opperator == Opperator.xnor)
+                _on = (bool)A == (bool)B;
+        }
     }
 }

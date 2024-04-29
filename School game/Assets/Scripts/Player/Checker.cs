@@ -5,14 +5,14 @@ using UnityEngine;
 
 namespace Player
 {
-    public enum layerMask
+    public enum layerMask : byte
     {
         ground = 0,
         death = 1,
         button = 2,
         movables = 3
     }
-    public enum checks
+    public enum checks : byte
     {
         ground = 0,
         button = 1,
@@ -45,7 +45,7 @@ namespace Player
         {
             if (checkers == null || layerMasks == null)
                 return new GameObject[0];
-            return (from col in Physics2D.OverlapAreaAll(checkers[checker, 0].position, checkers[checker, 1].position, layerMasks[layers]) where col.gameObject != gameObject select col.gameObject).ToArray();
+            return (from col in Physics2D.OverlapAreaAll(checkers[(int)checker, 0].position, checkers[(int)checker, 1].position, layerMasks[(int)layers]) where col.gameObject != gameObject select col.gameObject).ToArray();
         }
     }
 }

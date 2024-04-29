@@ -1,4 +1,6 @@
 using UnityEngine;
+namespace Activator
+{
     public class Activator : MonoBehaviour
     {
         protected bool _on;
@@ -7,3 +9,4 @@ using UnityEngine;
             return a._on;
         }
     }
+}

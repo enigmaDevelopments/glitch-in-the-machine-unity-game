@@ -1,9 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.UIElements;
 using Style;
 
 public class PowerWall : MonoBehaviour
@@ -16,7 +11,7 @@ public class PowerWall : MonoBehaviour
     public LayerMask ignore;
     public float speed = .001f;
     public bool sartExtended = false;
-    public Activator power;
+    public Activator.Activator power;
     private bool extending;
     private bool moving = false;
     private bool lastState;

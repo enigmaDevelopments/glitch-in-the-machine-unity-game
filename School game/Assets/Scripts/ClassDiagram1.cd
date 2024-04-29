@@ -1,77 +1,183 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Activator">
-    <Position X="3.5" Y="2.25" Width="1.5" />
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Activator.Activator">
+    <Position X="9.25" Y="23.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ButtonActivator">
-    <Position X="1.5" Y="5.25" Width="1.5" />
+  <Class Name="Activator.ButtonActivator">
+    <Position X="6.5" Y="25.75" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
       <FileName>Assets\Scripts\Activator\ButtonActivator.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="render" />
+    </ShowAsAssociation>
   </Class>
-  <Class Name="Logic">
-    <Position X="3.5" Y="5.25" Width="1.5" />
-    <NestedTypes>
-      <Enum Name="Logic.Opperator" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Assets\Scripts\Activator\Logic.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAIAkAAAA=</HashCode>
-      <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="PressurePlateActivator">
-    <Position X="5.5" Y="5.25" Width="1.5" />
+  <Class Name="Activator.PressurePlateActivator">
+    <Position X="11.75" Y="25.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\PressurePlateActivator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UnityEngine.MonoBehaviour">
-    <Position X="10.5" Y="6.25" Width="1.5" />
+    <Position X="29.5" Y="17.75" Width="4.75" />
     <TypeIdentifier />
   </Class>
-  <Class Name="HideSprite">
-    <Position X="13.75" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\HideSprite.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="LevelComplete">
-    <Position X="11.5" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAABAAiAAECAAAAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\LevelComplete.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="PowerWall">
-    <Position X="7.5" Y="2.25" Width="1.5" />
+    <Position X="15.75" Y="23.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
       <FileName>Assets\Scripts\PowerWall.cs</FileName>
     </TypeIdentifier>
-  </Class>
-  <Class Name="RotateRift">
-    <Position X="16" Y="2.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\RotateRift.cs</FileName>
-    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="power" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Feild.FeildMaker">
-    <Position X="9.25" Y="2.25" Width="1.5" />
+    <Position X="19" Y="23.25" Width="2" />
+    <AssociationLine Name="power" Type="Activator.Activator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="25.704" />
+        <Point X="19.75" Y="27.677" />
+        <Point X="15.258" Y="27.677" />
+        <Point X="15.258" Y="24.438" />
+        <Point X="12.25" Y="24.438" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
       <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="power" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EndLevel.LevelComplete">
+    <Position X="21.75" Y="23.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABEAiAAACQAAAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\End level\LevelComplete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Feild.FeildCollition">
+    <Position X="25.75" Y="23.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Feild\FeildCollition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Checker">
+    <Position X="29.75" Y="23.25" Width="6.5" />
+    <TypeIdentifier>
+      <HashCode>gAIACAAAEKAABAAAAQAAQAAAgYAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.ParentPlayerToMovable">
+    <Position X="37" Y="23.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAECADAMAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\ParentPlayerToMovable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Player.PlayerKiller">
+    <Position X="43.5" Y="23.25" Width="3.25" />
+    <AssociationLine Name="spawners" Type="Spawner.PlayerSpawner" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="46.75" Y="25.875" />
+        <Point X="48.312" Y="25.875" />
+        <Point X="48.312" Y="25.127" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAiAIAAAQIAAEAAAAAAIIABAAAAAgAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerKiller.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+      <Field Name="spawners" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Player.PlayerMovment">
+    <Position X="40.25" Y="23.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAEAgAiAIAAAEAAAAAAEAACAAAQAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerMovment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Spawner.PlayerSpawner">
+    <Position X="47.5" Y="23.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player spawner\PlayerSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.HideSprite">
+    <Position X="50" Y="23.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\HideSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.InverseScale">
+    <Position X="53.5" Y="23.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\InverseScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.RotateRift">
+    <Position X="55.75" Y="23.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\RotateRift.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Activator.Logic">
+    <Position X="9" Y="25.75" Width="2" />
+    <NestedTypes>
+      <Enum Name="Activator.Logic.Opperator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Activator\Logic.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAkAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndLevel.GotoLevel">
+    <Position X="22.5" Y="27.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\End level\GotoLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.Behaviour">
+    <Position X="17.25" Y="18.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.Component">
+    <Position X="0.75" Y="13" Width="6" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Style.SpriteChanger">
+    <Position X="1.5" Y="26.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAE=</HashCode>
+      <FileName>Assets\Scripts\Style\SpriteChanger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

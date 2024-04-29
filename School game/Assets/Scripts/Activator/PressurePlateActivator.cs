@@ -1,16 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
 using UnityEngine;
-
-public class PressurePlateActivator : Activator
+namespace Activator
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class PressurePlateActivator : Activator
     {
-        _on = true;
-    }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        _on = false;
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            _on = true;
+        }
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            _on = false;
+        }
     }
 }
