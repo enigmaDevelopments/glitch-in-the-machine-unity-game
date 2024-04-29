@@ -15,9 +15,11 @@ namespace Player
         public GameObject deadPlayer;
         public int killerKyoteTime = 2;
         private Checker check;
+        private PlayerSpawner[] spawners;
         private int timer = -1;
         private void Start()
         {
+            spawners = (from spawner in GameObject.FindGameObjectsWithTag("Respawn") select spawner.GetComponent<PlayerSpawner>()).ToArray();
             check = gameObject.GetComponent<Checker>();
         }
         private void OnCollisionEnter2D(Collision2D collision)
@@ -68,7 +70,6 @@ namespace Player
         }
         public void killPlayer(bool leaveBody = true)
         {
-            PlayerSpawner[] spawners = (from spawner in GameObject.FindGameObjectsWithTag("Respawn") select spawner.GetComponent<PlayerSpawner>()).ToArray();
             foreach (PlayerSpawner spawner in spawners)
                 spawner.spawn();
             if (leaveBody)

@@ -6,6 +6,9 @@
       <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
       <FileName>Assets\Scripts\PowerWall.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="power" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="UnityEngine.MonoBehaviour">
     <Position X="27.75" Y="1.75" Width="4.75" />
@@ -34,10 +37,22 @@
   </Class>
   <Class Name="Feild.FeildMaker">
     <Position X="18" Y="7.5" Width="2" />
+    <AssociationLine Name="power" Type="Activator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19" Y="9.954" />
+        <Point X="19" Y="11.991" />
+        <Point X="13.967" Y="11.991" />
+        <Point X="13.967" Y="8.545" />
+        <Point X="10.75" Y="8.545" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
       <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="power" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Player.Checker">
     <Position X="28.25" Y="7.25" Width="4.25" />
@@ -52,13 +67,32 @@
       <HashCode>EAQAAAECADAMAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\ParentPlayerToMovable.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Player.PlayerKiller">
     <Position X="36.5" Y="7.25" Width="3.25" />
+    <AssociationLine Name="spawners" Type="Spawner.PlayerSpawner" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="39.75" Y="8.688" />
+        <Point X="40.25" Y="8.688" />
+        <Point X="40.25" Y="7.1" />
+        <Point X="41.667" Y="7.1" Type="JumpStart" />
+        <Point X="41.833" Y="7.1" Type="JumpEnd" />
+        <Point X="44.125" Y="7.1" />
+        <Point X="44.125" Y="8.25" />
+        <Point X="44.5" Y="8.25" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQAAAAEAiAIAAAQAAAEAAAAAAIIABAAAAAgAAAQAAA=</HashCode>
+      <HashCode>AAQAAAAEAiAIAAAQIAAEAAAAAAIIABAAAAAgAAAQAAA=</HashCode>
       <FileName>Assets\Scripts\Player\PlayerKiller.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+      <Field Name="spawners" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Player.PlayerMovment">
     <Position X="40.5" Y="7.25" Width="2.5" />
@@ -66,6 +100,9 @@
       <HashCode>AAQiAEAgAiAIAAAEAAAAAAEAACAAAQAAAACAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\PlayerMovment.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="check" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Spawner.PlayerSpawner">
     <Position X="44.5" Y="7.25" Width="1.75" />
@@ -84,7 +121,7 @@
   <Class Name="Style.InverseScale">
     <Position X="51.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Style\InverseScale.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -101,6 +138,9 @@
       <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
       <FileName>Assets\Scripts\Activator\ButtonActivator.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="render" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Logic">
     <Position X="7.5" Y="9.75" Width="2" />
@@ -114,10 +154,20 @@
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
+    <AssociationLine Name="B" Type="Activator" ManuallyRouted="true">
+      <Path>
+        <Point X="8.875" Y="9.75" />
+        <Point X="8.875" Y="8.934" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAkAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="A" />
+      <Field Name="B" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="PressurePlateActivator">
     <Position X="10.25" Y="9.75" Width="3.25" />
@@ -139,6 +189,21 @@
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player spawner\Respawner.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Style.SpriteChanger">
+    <Position X="2.25" Y="6" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAE=</HashCode>
+      <FileName>Assets\Scripts\Style\SpriteChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.Behaviour">
+    <Position X="24.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="UnityEngine.Component" Collapsed="true">
+    <Position X="20.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
