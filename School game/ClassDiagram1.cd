@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="PowerWall">
+    <Position X="14.25" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
+      <FileName>Assets\Scripts\PowerWall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour">
+    <Position X="27.75" Y="1.75" Width="4.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Activator">
+    <Position X="7.75" Y="7.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndLevel.LevelComplete">
+    <Position X="21" Y="7.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABEAiAAACQAAAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\End level\LevelComplete.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Feild.FeildCollition">
+    <Position X="24.5" Y="8.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Feild\FeildCollition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Feild.FeildMaker">
+    <Position X="18" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAgAAAEAAAAAAAAAgAQAACA=</HashCode>
+      <FileName>Assets\Scripts\Feild\FeildMaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Checker">
+    <Position X="28.25" Y="7.25" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>gAIACAAAEKAABAAAAQAAQAAAgYAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\Checker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.ParentPlayerToMovable">
+    <Position X="33.25" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAECADAMAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\ParentPlayerToMovable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.PlayerKiller">
+    <Position X="36.5" Y="7.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAiAIAAAQAAAEAAAAAAIIABAAAAAgAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerKiller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.PlayerMovment">
+    <Position X="40.5" Y="7.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQiAEAgAiAIAAAEAAAAAAEAACAAAQAAAACAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player\PlayerMovment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.PlayerSpawner">
+    <Position X="44.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player spawner\PlayerSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.HideSprite">
+    <Position X="47.75" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\HideSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.InverseScale">
+    <Position X="51.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\InverseScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Style.RotateRift">
+    <Position X="53.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Style\RotateRift.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ButtonActivator">
+    <Position X="4.75" Y="9.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\ButtonActivator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic">
+    <Position X="7.5" Y="9.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Logic.Opperator">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Activator\Logic.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAkAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PressurePlateActivator">
+    <Position X="10.25" Y="9.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Activator\PressurePlateActivator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndLevel.GotoLevel">
+    <Position X="22" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\End level\GotoLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.Respawner">
+    <Position X="43.75" Y="10" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player spawner\Respawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
