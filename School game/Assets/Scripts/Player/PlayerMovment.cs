@@ -53,7 +53,7 @@ namespace Player
             #region buttonPressed
             if (Input.GetButtonDown("use"))
             {
-                foreach (GameObject button in check.checkAreaAll(2, 1)) 
+                foreach (GameObject button in check.checkAreaAll(layerMask.button, checks.button)) 
                     button.GetComponent<ButtonActivator>().press();
             }
             #endregion

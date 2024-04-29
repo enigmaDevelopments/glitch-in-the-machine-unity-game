@@ -62,11 +62,11 @@ namespace Player
         }
         public bool isDeathAbovePlayer()
         {
-            return check.checkArea(1, 2) && !check.checkArea(0,2);
+            return check.checkArea(layerMask.death, checks.head) && !check.checkArea(layerMask.ground,checks.head);
         }
         public bool isDeathUnderPlayer()
         {
-            return check.checkArea(1);
+            return check.checkArea(layerMask.death);
         }
         public void killPlayer(bool leaveBody = true)
         {

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="PowerWall">
-    <Position X="14.25" Y="7.25" Width="2.5" />
+    <Position X="16.75" Y="11.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AQigACAAAiAAAAgAAAAAAAgAACEAEQAAAAAAAABAgAA=</HashCode>
       <FileName>Assets\Scripts\PowerWall.cs</FileName>
@@ -11,39 +11,39 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="UnityEngine.MonoBehaviour">
-    <Position X="27.75" Y="1.75" Width="4.75" />
+    <Position X="31.25" Y="5.75" Width="4.75" />
     <TypeIdentifier />
   </Class>
   <Class Name="Activator">
-    <Position X="7.75" Y="7.25" Width="3" />
+    <Position X="10" Y="11.25" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\Activator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EndLevel.LevelComplete">
-    <Position X="21" Y="7.5" Width="3.25" />
+    <Position X="22.75" Y="11.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAQAAABEAiAAACQAAAAAAAAAAEAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\End level\LevelComplete.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Feild.FeildCollition">
-    <Position X="24.5" Y="8.5" Width="3.25" />
+    <Position X="26.75" Y="11.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Feild\FeildCollition.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Feild.FeildMaker">
-    <Position X="18" Y="7.5" Width="2" />
+    <Position X="20" Y="11.25" Width="2" />
     <AssociationLine Name="power" Type="Activator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="19" Y="9.954" />
-        <Point X="19" Y="11.991" />
-        <Point X="13.967" Y="11.991" />
-        <Point X="13.967" Y="8.545" />
-        <Point X="10.75" Y="8.545" />
+        <Point X="20.938" Y="13.704" />
+        <Point X="20.938" Y="15.557" />
+        <Point X="16.363" Y="15.557" />
+        <Point X="16.363" Y="12.5" />
+        <Point X="13" Y="12.5" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -55,14 +55,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Player.Checker">
-    <Position X="28.25" Y="7.25" Width="4.25" />
+    <Position X="30.75" Y="11.25" Width="6.5" />
     <TypeIdentifier>
       <HashCode>gAIACAAAEKAABAAAAQAAQAAAgYAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\Checker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Player.ParentPlayerToMovable">
-    <Position X="33.25" Y="7.25" Width="2.5" />
+    <Position X="38" Y="11.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>EAQAAAECADAMAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\ParentPlayerToMovable.cs</FileName>
@@ -72,17 +72,17 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Player.PlayerKiller">
-    <Position X="36.5" Y="7.25" Width="3.25" />
+    <Position X="41.25" Y="11.25" Width="3.25" />
     <AssociationLine Name="spawners" Type="Spawner.PlayerSpawner" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="39.75" Y="8.688" />
-        <Point X="40.25" Y="8.688" />
-        <Point X="40.25" Y="7.1" />
-        <Point X="41.667" Y="7.1" Type="JumpStart" />
-        <Point X="41.833" Y="7.1" Type="JumpEnd" />
-        <Point X="44.125" Y="7.1" />
-        <Point X="44.125" Y="8.25" />
-        <Point X="44.5" Y="8.25" />
+        <Point X="44.5" Y="12.25" />
+        <Point X="45" Y="12.25" />
+        <Point X="45" Y="11.105" />
+        <Point X="46.417" Y="11.105" Type="JumpStart" />
+        <Point X="46.583" Y="11.105" Type="JumpEnd" />
+        <Point X="48.875" Y="11.105" />
+        <Point X="48.875" Y="12.125" />
+        <Point X="49.25" Y="12.125" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -95,7 +95,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Player.PlayerMovment">
-    <Position X="40.5" Y="7.25" Width="2.5" />
+    <Position X="45.25" Y="11.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAQiAEAgAiAIAAAEAAAAAAEAACAAAQAAAACAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player\PlayerMovment.cs</FileName>
@@ -105,35 +105,35 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Spawner.PlayerSpawner">
-    <Position X="44.5" Y="7.25" Width="1.75" />
+    <Position X="49.25" Y="11.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAABAAAAAAABAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player spawner\PlayerSpawner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Style.HideSprite">
-    <Position X="47.75" Y="7.25" Width="2.75" />
+    <Position X="52.5" Y="11.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Style\HideSprite.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Style.InverseScale">
-    <Position X="51.25" Y="7.25" Width="1.5" />
+    <Position X="56" Y="11.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Style\InverseScale.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Style.RotateRift">
-    <Position X="53.5" Y="7.25" Width="1.75" />
+    <Position X="58.25" Y="11.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Style\RotateRift.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ButtonActivator">
-    <Position X="4.75" Y="9.75" Width="2" />
+    <Position X="7.25" Y="13.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQBgAEAACCAAAAAAAAAAAAAAABAAAAAAACAAAAYCAA=</HashCode>
       <FileName>Assets\Scripts\Activator\ButtonActivator.cs</FileName>
@@ -143,7 +143,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Logic">
-    <Position X="7.5" Y="9.75" Width="2" />
+    <Position X="10" Y="13.75" Width="2" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -154,12 +154,6 @@
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
-    <AssociationLine Name="B" Type="Activator" ManuallyRouted="true">
-      <Path>
-        <Point X="8.875" Y="9.75" />
-        <Point X="8.875" Y="8.934" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAkAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\Logic.cs</FileName>
@@ -170,39 +164,39 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="PressurePlateActivator">
-    <Position X="10.25" Y="9.75" Width="3.25" />
+    <Position X="12.75" Y="13.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Activator\PressurePlateActivator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="EndLevel.GotoLevel">
-    <Position X="22" Y="11.75" Width="1.5" />
+    <Position X="23.5" Y="15.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\End level\GotoLevel.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Spawner.Respawner">
-    <Position X="43.75" Y="10" Width="3.25" />
+    <Position X="48.5" Y="14" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAIAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Player spawner\Respawner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Style.SpriteChanger">
-    <Position X="2.25" Y="6" Width="3.75" />
+    <Position X="2.25" Y="14.5" Width="3.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAE=</HashCode>
       <FileName>Assets\Scripts\Style\SpriteChanger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="UnityEngine.Behaviour">
-    <Position X="24.25" Y="2.25" Width="2.5" />
+    <Position X="27.75" Y="6.75" Width="2.5" />
     <TypeIdentifier />
   </Class>
   <Class Name="UnityEngine.Component" Collapsed="true">
-    <Position X="20.75" Y="2.25" Width="1.5" />
+    <Position X="25" Y="7" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="9" />

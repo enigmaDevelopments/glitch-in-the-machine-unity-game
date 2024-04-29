@@ -44,7 +44,7 @@ namespace Player
         }
         private GameObject[] getBellow()
         {
-           return check.checkAreaAll(3);
+           return check.checkAreaAll(layerMask.movables);
         }
         private void parentToChild(string name)
         {
