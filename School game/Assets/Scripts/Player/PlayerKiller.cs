@@ -41,19 +41,12 @@ namespace Player
             {
                 if (isDeathUnderPlayer())
                 {
-                    if (!check.checkArea())
-                        deathTimer();
+                    if (timer == 0)
+                        killPlayer();
+                    else
+                        timer--;
                 }
-                else
-                    deathTimer();
             }
-        }
-        private void deathTimer()
-        {
-            if (timer == 0)
-                killPlayer();
-            else
-                timer--;
         }
         public bool isDeathAbovePlayer()
         {
@@ -61,7 +54,7 @@ namespace Player
         }
         public bool isDeathUnderPlayer()
         {
-            return check.checkArea(layerMask.death);
+            return !(check.checkArea(layerMask.death) && check.checkArea());
         }
         public void killPlayer(bool leaveBody = true)
         {

@@ -40,15 +40,14 @@ namespace Activate
             else
             {
                 depressed = true;
+                time = timer;
                 if (singlePress)
                 {
                     _on = true;
-                    time = timer;
                     render.changeSprite(1);
                 }
                 else
                 {
-                    time = timer;
                     _on = !_on;
                     if (_on)
                         render.changeSprite(1);
