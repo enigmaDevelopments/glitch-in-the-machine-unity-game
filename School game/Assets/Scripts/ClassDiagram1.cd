@@ -78,12 +78,12 @@
     <AssociationLine Name="spawners" Type="Spawner.PlayerSpawner" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="46.75" Y="25.875" />
-        <Point X="48.312" Y="25.875" />
-        <Point X="48.312" Y="25.127" />
+        <Point X="48" Y="25.875" />
+        <Point X="48" Y="25.127" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAQAAAAEAiAIAAAQIAAEAAAAAAIIABAAAAAgAAAQAAA=</HashCode>
+      <HashCode>AAQAAAAEAiAIAAAQIAAEAAAAAAAIABAAAAAgAAAQAAA=</HashCode>
       <FileName>Assets\Scripts\Player\PlayerKiller.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -163,6 +163,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAE=</HashCode>
       <FileName>Assets\Scripts\Style\SpriteChanger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spawner.Respawner">
+    <Position X="46.75" Y="27" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Player spawner\Respawner.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="Player.layerMask">
